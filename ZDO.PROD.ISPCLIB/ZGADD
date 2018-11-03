@@ -134,9 +134,7 @@ If POS('(', WHAT) > 0
     copycmd = "cp -U -M" copycmd" "DIR"/"PDS"/"                                 
     call bpxwunix copycmd                                                       
   end                                                                           
-  say "yeah"                                                                    
   /* add the files just copied to the repo */                                   
-  trace i                                                                       
   call bpxwunix envs" && cd "DIR" && git add ."                                 
   /* then commit the additions with the msg from panel */                       
   call bpxwunix envs" && cd "DIR" && git commit -m '"commitm"'"                 
